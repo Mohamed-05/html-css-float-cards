@@ -33,3 +33,10 @@ main section{
 main section img{
     height: 5rem;
 }
+
+.marco{
+    display: inline-block;
+    height: 5rem;
+    background-color: black;
+    color: white;
+}
