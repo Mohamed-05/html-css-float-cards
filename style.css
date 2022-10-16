@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-circle::after{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
@@ -14,29 +14,52 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header>h1{
-    color: crimson;
-    padding: 2rem;
-    text-align: center;
-}
-
-
 .container{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
+    min-width: 680px;
+    max-width: 1000px;
 }
 
-main section{
-    padding-top: 2rem;
+
+h1{
+    color: crimson;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
-main section img{
+h1 ~ p{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+div.cella>img{
+    margin-right: .5rem;
     height: 5rem;
 }
 
-.marco{
-    display: inline-block;
-    height: 5rem;
+.float-left{
+    float: left;
+}
+
+div.contenutoinpiù{
+    padding: .5rem;
+}
+
+div.contenutoinpiù h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: .25rem;
+}
+div.cella{
+    width: calc( (100% / 3) - 3rem);
+    margin: 3rem 1.5rem 0rem;
     background-color: black;
     color: white;
+    box-shadow: 10px 10px lightgray;
+}
+
+div.contenutoinpiù p{
+    margin-bottom: .25rem;
 }
